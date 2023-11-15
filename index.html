@@ -9,14 +9,32 @@
 </head>
 
 <body>
-    <div class="pageContainer">    
+    <div id="pageContainer">    
         <div id ="specificSearch">
-            <h1>Genre</h1>
-            <h2>Location</h2>
-            <h3>Venue</h3>
-            <h4>Date</h4>
+            <h1 id="genre" onmouseover="expLeft(this)" onmouseout="restorePos(this)">Genre</h1>
+            <h2 id="location" onmouseover="expLeft(this)" onmouseout="restorePos(this)">Location</h2>
+            <h3 id="venue" onmouseover="expLeft(this)" onmouseout="restorePos(this)">Venue</h3>
+            <h4 id="date" onmouseover="expLeft(this)" onmouseout="restorePos(this)">Date</h4>
         </div>
     </div>
+
+    <script>
+        
+        function expLeft(element) {
+            element.style.marginLeft = '-5em';
+        }
+        function restorePos(element) {
+            element.style.marginLeft = '';
+        }
+
+    </script>
+
+    </script>
+
+
 </body>
+
+
+
 
 </html>
