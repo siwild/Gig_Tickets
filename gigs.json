@@ -1,0 +1,206 @@
+{
+    "events": [
+      {
+        "id": 1,
+        "name": "Liam Gallagher",
+        "date": "01-06-2024",
+        "genres": ["Rock & Roll", "Indie"],
+        "venue": {
+          "id": 101,
+          "name": "Utilita Arena",
+          "location": "Sheffield"
+        },
+        "tickets": [
+          {
+            "id": 1001,
+            "type": "Standing",
+            "price": 79.99,
+            "quantityAvailable": 1000
+          },
+          {
+            "id": 1002,
+            "type": "Seated",
+            "price": 85,
+            "quantityAvailable": 2000
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Kasabian",
+        "date": "04-02-2024",
+        "genres": ["Rock & Roll", "Indie"],
+        "venue": {
+          "id": 102,
+          "name": "O2 Academy",
+          "location": "Sheffield"
+        },
+        "tickets": [
+          {
+            "id": 1003,
+            "type": "General Admission",
+            "price": 47.99,
+            "quantityAvailable": 400
+          },
+          {
+            "id": 1004,
+            "type": "VIP Experience",
+            "price": 99.99,
+            "quantityAvailable": 100
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Jake Bugg",
+        "date": "21-01-2024",
+        "genres": ["Indie", "Folk"],
+        "venue": {
+          "id": 103,
+          "name": "The Leadmill",
+          "location": "Sheffield"
+        },
+        "tickets": [
+          {
+            "id": 1005,
+            "type": "General Admission",
+            "price": 39.99,
+            "quantityAvailable": 350
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "The Prodigy",
+        "date": "28-03-2024",
+        "genres": ["Dance", "Electronic"],
+        "venue": {
+            "id": 101,
+            "name": "Utilita Arena",
+            "location": "Sheffield"
+        },
+        "tickets": [
+          {
+            "id": 1006,
+            "type": "Standing",
+            "price": 59.99,
+            "quantityAvailable": 1000
+          },
+          {
+            "id": 1007,
+            "type": "Seated",
+            "price": 65,
+            "quantityAvailable": 2000
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Take That",
+        "date": "28-11-2024",
+        "genres": ["Pop"],
+        "venue": {
+            "id": 104,
+            "name": "Etihad Stadium",
+            "location": "Manchester"
+        },
+        "tickets": [
+          {
+            "id": 1008,
+            "type": "Standing",
+            "price": 89.99,
+            "quantityAvailable": 3000
+          },
+          {
+            "id": 1009,
+            "type": "Seated",
+            "price": 99.99,
+            "quantityAvailable": 51400
+          }
+        ]
+      },      
+      {
+        "id": 6,
+        "name": "Fatboy Slim",
+        "date": "22-10-2024",
+        "genres": ["Dance", "Electronic"],
+        "venue": {
+            "id": 105,
+            "name": "AO Arena",
+            "location": "Manchester"
+        },
+        "tickets": [
+          {
+            "id": 1010,
+            "type": "Standing",
+            "price": 49.50,
+            "quantityAvailable": 800
+          },
+          {
+            "id": 1011,
+            "type": "Seated",
+            "price": 59.99,
+            "quantityAvailable": 2100
+          }
+        ]
+      }, 
+      {
+        "id": 7,
+        "name": "The Stone Roses",
+        "date": "15-09-2024",
+        "genres": ["Rock & Roll", "Indie", "Dance"],
+        "venue": {
+            "id": 104,
+            "name": "Etihad Stadium",
+            "location": "Manchester"
+        },
+        "tickets": [
+          {
+            "id": 1012,
+            "type": "Standing",
+            "price": 74.50,
+            "quantityAvailable": 3000
+          },
+          {
+            "id": 1013,
+            "type": "Seated",
+            "price": 85,
+            "quantityAvailable": 51400
+          }
+        ]
+      },      
+      {
+        "id": 8,
+        "name": "Calvin Harris",
+        "date": "10-07-2024",
+        "genres": ["Dance", "Electronic", "Pop"],
+        "venue": {
+            "id": 105,
+            "name": "AO Arena",
+            "location": "Manchester"
+        },
+        "tickets": [
+          {
+            "id": 1014,
+            "type": "Standing",
+            "price": 89.99,
+            "quantityAvailable": 800
+          },
+          {
+            "id": 1015,
+            "type": "Seated",
+            "price": 95,
+            "quantityAvailable": 2100
+          }
+        ]
+      }, 
+
+
+
+
+
+
+
+    ]
+  }
+  

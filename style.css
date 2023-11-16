@@ -1,6 +1,9 @@
 body {
     background-image: url('Images/Crowd.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     margin: 0;
     font-family: Arial, sans-serif;
 }
@@ -8,8 +11,8 @@ body {
 #pageContainer {
     box-sizing: border-box;
     width: 60%;
-    margin: 2em 16em;
-    padding: 22em 0.8em;
+    margin: 2em auto;
+    padding: 26em 0.8em;
     border: 2px solid orange;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.78);
@@ -19,7 +22,7 @@ body {
     float: right;
     width: 40%;
     box-sizing: border-box;
-    margin-top: -8em;
+    margin-top: -5em;
     margin-right: -1em;
 }
 
