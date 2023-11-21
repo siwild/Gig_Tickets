@@ -6,6 +6,7 @@ body {
     background-attachment: fixed;
     margin: 0;
     font-family: Arial, sans-serif;
+    position: relative;
 }
 
 #pageContainer {
@@ -40,6 +41,7 @@ body {
     padding-left: 0.4em;
     margin: 0.1em;
     transition: margin-left 0.3s ease;
+    
 }
 
 #genre {
@@ -55,3 +57,37 @@ body {
     margin-left: 1em;
 }
 
+#optionsContainer {
+    display: none; /* Initially hide the options container */
+    position: absolute; /* Position the options absolutely */
+    z-index: 999; /* Ensure a high z-index to appear in front */
+    background-color: white;
+    padding: 10em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%); /* Center the options */
+    top: 50%; /* Position the top at 50% */
+    left: 50%; /* Position the left at 50% */
+    opacity: 0; /* Initially set opacity to 0 */
+    animation: fadeIn 0.5s forwards;  
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.options-list-item {
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.options-list-item:hover {
+    background-color: #f0f0f0;
+}

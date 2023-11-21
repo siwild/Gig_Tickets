@@ -11,16 +11,18 @@
 <body>
     <div id="pageContainer">    
         <div id ="specificSearch">
-            <h1 id="genre" onmouseover="expLeft(this)" onmouseout="restorePos(this)">Genre</h1>
-            <h2 id="location" onmouseover="expLeft(this)" onmouseout="restorePos(this)">Location</h2>
-            <h3 id="venue" onmouseover="expLeft(this)" onmouseout="restorePos(this)">Venue</h3>
-            <h4 id="date" onmouseover="expLeft(this)" onmouseout="restorePos(this)">Date</h4>
+            <h1 id="genre" onmouseover="expLeft(this)" onmouseout="restorePos(this)" onclick="showOptions('genre')">Genre</h1>
+            <h2 id="location" onmouseover="expLeft(this)" onmouseout="restorePos(this)" onclick="showOptions('location')">Location</h2>
+            <h3 id="venue" onmouseover="expLeft(this)" onmouseout="restorePos(this)" onclick="showOptions('venue')">Venue</h3>
+            <h4 id="date" onmouseover="expLeft(this)" onmouseout="restorePos(this)" onclick="showOptions('date')">Date</h4>
         </div>
+
+        <div id="optionsContainer"></div> <!-- Empty div that fills with relevant data when search buttons are clicked. -->
     </div>
 
     <script>
  
-//FUNCTION for movement of the 4 main 'search' buttons: 
+//FUNCTION for movement of the 4 main 'search' buttons (lines 25-30): 
 
         function expLeft(element) {
             element.style.marginLeft = '-5em';
@@ -29,11 +31,54 @@
             element.style.marginLeft = '';
         }
 
-        
 
-    </script>
+// FUNCTION for loading and displaying the JSON data when tg esearch buttons are clicked (lines 37-55).
 
-    </script>
+async function showOptions(category) {
+            const response = await fetch('gigs.json'); // Assuming the JSON file is named data.json
+            const data = await response.json();
+
+            const optionsContainer = document.getElementById('optionsContainer');
+            optionsContainer.innerHTML = ''; // Clear previous options
+
+            const uniqueOptions = new Set();
+            data.gigs.forEach(gig => uniqueOptions.add(gig[category]));
+
+            const optionsList = document.createElement('ul');
+            uniqueOptions.forEach(option => {
+                const listItem = document.createElement('li');
+                listItem.textContent = option;
+                listItem.classList.add('options-list-item'); // Add a class for styling
+
+                listItem.addEventListener('click', () => {
+                    hideOptions(); // Function to hide options when an option is clicked
+                });
+
+                // Example: Add inline style to the items
+                listItem.style.fontWeight = 'bold'; // You can add any inline style here
+
+                optionsList.appendChild(listItem);
+            });
+
+            const closeButton = document.createElement('button');
+            closeButton.textContent = 'Close';
+            closeButton.addEventListener('click', () => {
+                hideOptions(); // Function to hide options when the 'Close' button is clicked
+            });
+
+            optionsContainer.appendChild(optionsList);
+            optionsContainer.appendChild(closeButton);
+            optionsContainer.style.display = 'block';
+        }
+
+        function hideOptions() {
+            const optionsContainer = document.getElementById('optionsContainer');
+            optionsContainer.style.display = 'none'; // Hide the options container
+        }
+
+</script>
+
+
 
 
 </body>
