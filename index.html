@@ -9,62 +9,49 @@
 </head>
 
 <body>
-    <div id="pageContainer">    
+    <div id="homePageContainer">    
         <div id ="specificSearch">
-            <h1 id="genre" onmouseover="expLeft(this)" onmouseout="restorePos(this)" onclick="showOptions('genre')">Genre</h1>
-            <h2 id="location" onmouseover="expLeft(this)" onmouseout="restorePos(this)" onclick="showOptions('location')">Location</h2>
-            <h3 id="venue" onmouseover="expLeft(this)" onmouseout="restorePos(this)" onclick="showOptions('venue')">Venue</h3>
-            <h4 id="date" onmouseover="expLeft(this)" onmouseout="restorePos(this)" onclick="showOptions('date')">Date</h4>
+            <section id="genre" onmouseover="expLeft(this)" onmouseout="restorePos(this)" onclick="showOptions('genre')">Genre</section>
+            <section id="location" onmouseover="expLeft(this)" onmouseout="restorePos(this)" onclick="showOptions('location')">Location</section>
+            <section id="venue" onmouseover="expLeft(this)" onmouseout="restorePos(this)" onclick="showOptions('venue')">Venue</section>
+            <section id="date" onmouseover="expLeft(this)" onmouseout="restorePos(this)" onclick="showOptions('date')">Date</section>
         </div>
 
-        <div id="optionsContainer"></div> <!-- Empty div that fills with relevant data when search buttons are clicked. -->
+        <div id="logo">
+            <h1>Just Gigs</h1>
+        </div> 
+        
+        <div id="optionsContainer" class="options-container"></div>
     </div>
 
     <script>
- 
-//FUNCTION for movement of the 4 main 'search' buttons (lines 25-30): 
-
-        function expLeft(element) {
-            element.style.marginLeft = '-5em';
-        }
-        function restorePos(element) {
-            element.style.marginLeft = '';
-        }
-
-
-// FUNCTION for loading and displaying the JSON data when tg esearch buttons are clicked (lines 37-55).
-
-async function showOptions(category) {
-            const response = await fetch('gigs.json'); // Assuming the JSON file is named data.json
+        async function showOptions(category) {
+            const response = await fetch('gigs.json');
             const data = await response.json();
 
             const optionsContainer = document.getElementById('optionsContainer');
-            optionsContainer.innerHTML = ''; // Clear previous options
+            optionsContainer.innerHTML = ''; // Clears previous options
 
             const uniqueOptions = new Set();
             data.gigs.forEach(gig => uniqueOptions.add(gig[category]));
 
-            const optionsList = document.createElement('ul');
+            const optionsList = document.createElement('div');
             uniqueOptions.forEach(option => {
-                const listItem = document.createElement('li');
-                listItem.textContent = option;
-                listItem.classList.add('options-list-item'); // Add a class for styling
+                const button = document.createElement('button');
+                button.textContent = option;
+                button.classList.add('options-list-item');
 
-                listItem.addEventListener('click', () => {
-                    hideOptions(); // Function to hide options when an option is clicked
+                button.addEventListener('click', () => {
+                    hideOptions();
+                    // You might want to perform actions based on the selected option here
                 });
 
-                // Example: Add inline style to the items
-                listItem.style.fontWeight = 'bold'; // You can add any inline style here
-
-                optionsList.appendChild(listItem);
+                optionsList.appendChild(button);
             });
 
             const closeButton = document.createElement('button');
             closeButton.textContent = 'Close';
-            closeButton.addEventListener('click', () => {
-                hideOptions(); // Function to hide options when the 'Close' button is clicked
-            });
+            closeButton.addEventListener('click', hideOptions);
 
             optionsContainer.appendChild(optionsList);
             optionsContainer.appendChild(closeButton);
@@ -73,7 +60,15 @@ async function showOptions(category) {
 
         function hideOptions() {
             const optionsContainer = document.getElementById('optionsContainer');
-            optionsContainer.style.display = 'none'; // Hide the options container
+            optionsContainer.style.display = 'none';
+        }
+
+        function expLeft(element) {
+            element.style.marginLeft = '-5em';
+        }
+
+        function restorePos(element) {
+            element.style.marginLeft = '';
         }
 
 </script>

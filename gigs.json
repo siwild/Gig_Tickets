@@ -2,35 +2,67 @@
   "gigs": [
     {
       "id": 1,
-      "genre": "Indie",
-      "artist": "The Rolling Stones",
-      "date": "2023-12-15",
-      "location": "New York City",
-      "venue": "Madison Square Garden"
+      "genre": "Rock & Roll",
+      "artist": "Liam Gallagher",
+      "date": "01-06-2024",
+      "location": "Sheffield",
+      "venue": "Sheffield - Utilita Arena"
     },
     {
       "id": 2,
-      "genre": "Electronic",
-      "artist": "Calvin Harris",
-      "date": "2023-11-25",
-      "location": "Los Angeles",
-      "venue": "Hollywood Bowl"
+      "genre": "Indie",
+      "artist": "Kasabian",
+      "date": "05-02-2024",
+      "location": "Sheffield",
+      "venue": "Sheffield - O2 Academy"
     },
     {
       "id": 3,
-      "genre": "Pop",
-      "artist": "Taylor Swift",
-      "date": "2024-02-10",
-      "location": "London",
-      "venue": "Wembley Stadium"
+      "genre": "Electronic",
+      "artist": "The Prodigy",
+      "date": "18-08-2024",
+      "location": "Manchester",
+      "venue": "Manchester - AO Arena"
     },
     {
       "id": 4,
+      "genre": "Indie",
+      "artist": "The Stone Roses",
+      "date": "21-07-2024",
+      "location": "Manchester",
+      "venue": "Manchester - Etihad Stadium"
+    },
+    {
+      "id": 5,
       "genre": "Hip Hop",
-      "artist": "Kendrick Lamar",
-      "date": "2024-01-05",
-      "location": "Chicago",
-      "venue": "United Center"
+      "artist": "Dr. Dre",
+      "date": "01-05-2024",
+      "location": "London",
+      "venue": "London - The O2"
+    },
+    {
+      "id": 6,
+      "genre": "Rock & Roll",
+      "artist": "The Rolling Stones",
+      "date": "10-02-2024",
+      "location": "London",
+      "venue": "London - The O2"
+    },
+    {
+      "id": 7,
+      "genre": "Pop",
+      "artist": "Take That",
+      "date": "11-08-2024",
+      "location": "Edinburgh",
+      "venue": "Edinburgh - O2 Academy"
+    },
+    {
+      "id": 8,
+      "genre": "Electronic",
+      "artist": "Fatboy Slim",
+      "date": "02-10-2024",
+      "location": "Edinburgh",
+      "venue": "Edinburgh - O2 Academy"
     }
   ]
 }
