@@ -82,7 +82,9 @@ body {
     top: 50%;
     left: 50%;
     opacity: 0;
-    animation: fadeIn 0.5s forwards;
+    /* animation: fadeIn 0.5s forwards; */
+    animation: scaleFadeIn 0.3s forwards;
+    backdrop-filter: blur(8px); 
 }
 
 .options-list-item {
@@ -94,7 +96,7 @@ body {
     cursor: pointer;
     border: 1px solid #000;
     border-radius: 0.2em;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.9s ease;
     width: 10em;
     text-align: center;
     white-space: nowrap;
@@ -106,12 +108,16 @@ body {
     background-color: #f0f0f0;
 }
 
-@keyframes fadeIn {
+
+@keyframes scaleFadeIn {
     from {
         opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
     }
 
     to {
         opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
     }
 }
+

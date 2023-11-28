@@ -9,71 +9,32 @@
 </head>
 
 <body>
-    <div id="homePageContainer">    
-        <div id ="specificSearch">
-            <section id="genre" onmouseover="expLeft(this)" onmouseout="restorePos(this)" onclick="showOptions('genre')">Genre</section>
-            <section id="location" onmouseover="expLeft(this)" onmouseout="restorePos(this)" onclick="showOptions('location')">Location</section>
-            <section id="venue" onmouseover="expLeft(this)" onmouseout="restorePos(this)" onclick="showOptions('venue')">Venue</section>
-            <section id="date" onmouseover="expLeft(this)" onmouseout="restorePos(this)" onclick="showOptions('date')">Date</section>
-        </div>
-
-        <div id="logo">
-            <h1>Just Gigs</h1>
-        </div> 
+    <div id="login/register"></div>
+    
+    <div id="homePage">
+        <div id="homePageContainer">    
+            <div id ="specificSearch">
+                <section id="genre" onmouseover="expLeft(this)" onmouseout="restorePos(this)" onclick="showOptions('genre')">Genre</section>
+                <section id="location" onmouseover="expLeft(this)" onmouseout="restorePos(this)" onclick="showOptions('location')">Location</section>
+                <section id="venue" onmouseover="expLeft(this)" onmouseout="restorePos(this)" onclick="showOptions('venue')">Venue</section>
+                <section id="date" onmouseover="expLeft(this)" onmouseout="restorePos(this)" onclick="showOptions('date')">Date</section>
+            </div>
         
-        <div id="optionsContainer" class="options-container"></div>
+
+            <div id="optionsContainer" class="options-container"></div>
+        </div>
+    </div>
+    
+    <div id="gigsPage" style="display: none;">
+        <div id="gigsPagecontainer">
+            <h1>it works!</h1>
+        </div>
     </div>
 
-    <script>
-        async function showOptions(category) {
-            const response = await fetch('gigs.json');
-            const data = await response.json();
 
-            const optionsContainer = document.getElementById('optionsContainer');
-            optionsContainer.innerHTML = ''; // Clears previous options
+    <script src="script.js"></script>
 
-            const uniqueOptions = new Set();
-            data.gigs.forEach(gig => uniqueOptions.add(gig[category]));
-
-            const optionsList = document.createElement('div');
-            uniqueOptions.forEach(option => {
-                const button = document.createElement('button');
-                button.textContent = option;
-                button.classList.add('options-list-item');
-
-                button.addEventListener('click', () => {
-                    hideOptions();
-                    // You might want to perform actions based on the selected option here
-                });
-
-                optionsList.appendChild(button);
-            });
-
-            const closeButton = document.createElement('button');
-            closeButton.textContent = 'Close';
-            closeButton.addEventListener('click', hideOptions);
-
-            optionsContainer.appendChild(optionsList);
-            optionsContainer.appendChild(closeButton);
-            optionsContainer.style.display = 'block';
-        }
-
-        function hideOptions() {
-            const optionsContainer = document.getElementById('optionsContainer');
-            optionsContainer.style.display = 'none';
-        }
-
-        function expLeft(element) {
-            element.style.marginLeft = '-5em';
-        }
-
-        function restorePos(element) {
-            element.style.marginLeft = '';
-        }
-
-</script>
-
-
+    
 
 
 </body>
