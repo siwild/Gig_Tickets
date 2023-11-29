@@ -6,7 +6,9 @@
       "artist": "Liam Gallagher",
       "date": "01-06-2024",
       "location": "Sheffield",
-      "venue": "Sheffield - Utilita Arena"
+      "venue": "Sheffield - Utilita Arena",
+      "price": "£79.90",
+      "imageFileName":"LG.jpg"
     },
     {
       "id": 2,
@@ -14,7 +16,9 @@
       "artist": "Kasabian",
       "date": "05-02-2024",
       "location": "Sheffield",
-      "venue": "Sheffield - O2 Academy"
+      "venue": "Sheffield - O2 Academy",
+      "price": "£49.50",
+      "imageFileName":"LG.jpg"
     },
     {
       "id": 3,
@@ -22,7 +26,9 @@
       "artist": "The Prodigy",
       "date": "18-08-2024",
       "location": "Manchester",
-      "venue": "Manchester - AO Arena"
+      "venue": "Manchester - AO Arena",
+      "price": "£65.00",
+      "imageFileName":"LG.jpg"
     },
     {
       "id": 4,
@@ -30,7 +36,9 @@
       "artist": "The Stone Roses",
       "date": "21-07-2024",
       "location": "Manchester",
-      "venue": "Manchester - Etihad Stadium"
+      "venue": "Manchester - Etihad Stadium",
+      "price": "£80.00",
+      "imageFileName":"LG.jpg"
     },
     {
       "id": 5,
@@ -38,7 +46,9 @@
       "artist": "Dr. Dre",
       "date": "01-05-2024",
       "location": "London",
-      "venue": "London - The O2"
+      "venue": "London - The O2",
+      "price": "£84.99",
+      "imageFileName":"LG.jpg"
     },
     {
       "id": 6,
@@ -46,7 +56,9 @@
       "artist": "The Rolling Stones",
       "date": "10-02-2024",
       "location": "London",
-      "venue": "London - The O2"
+      "venue": "London - The O2",
+      "price": "£89.90",
+      "imageFileName":"LG.jpg"
     },
     {
       "id": 7,
@@ -54,7 +66,9 @@
       "artist": "Take That",
       "date": "11-08-2024",
       "location": "Edinburgh",
-      "venue": "Edinburgh - O2 Academy"
+      "venue": "Edinburgh - O2 Academy",
+      "price": "£52.60",
+      "imageFileName":"LG.jpg"
     },
     {
       "id": 8,
@@ -62,7 +76,9 @@
       "artist": "Fatboy Slim",
       "date": "02-10-2024",
       "location": "Edinburgh",
-      "venue": "Edinburgh - O2 Academy"
+      "venue": "Edinburgh - O2 Academy",
+      "price": "£44.99",
+      "imageFileName":"LG.jpg"
     }
   ]
 }

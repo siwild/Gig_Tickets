@@ -26,6 +26,16 @@ body {
     background-color: rgba(0, 0, 0, 0.78);
 }
 
+#gigsPageContainer {
+    box-sizing: border-box;
+    width: 60%;
+    margin: 2em auto;
+    padding: 26em 0.8em;
+    border: 2px solid orange;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.78);
+}
+
 #specificSearch {
     float: right;
     width: 46%;
@@ -119,5 +129,47 @@ body {
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
     }
+}
+
+#gigsPageContainer {
+    box-sizing: border-box;
+    width: 60%;
+    margin: 2em auto;
+    /* padding: 26em 0.8em; */
+    border: 2px solid orange;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.78);
+    padding-top: 24em;
+    padding-bottom: 0.8em;
+}
+
+.gig-element {
+        background-color: white;
+        color: rgb(26, 26, 26);
+        font-size: 1.9em;
+        border-bottom: 2px solid;
+        border-left: 2px solid;
+        border-top: 2px solid;
+        border-radius: 10px;
+        padding: 0.4em 0.2em 1.2em 11em;
+        margin-bottom: 0.1em;
+        box-shadow: -5px 3px 9px 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+.gig-detail {
+    flex: 0 1 48%; /* Adjust width as needed */
+    /* Additional styles for each detail */
+}
+
+.gig-element img {
+    width: 100px; /* Adjust the width of the image */
+    height: 100px; /* Adjust the height of the image */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 50%; /* Rounded image, adjust as needed */
+    margin-right: 20px; /* Spacing between image and details */
 }
 
