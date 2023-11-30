@@ -50,36 +50,39 @@ function showGigsPage(category, selectedOption, data) {
     filteredGigs.forEach(gig => {
         const gigElement = document.createElement('div');
         gigElement.classList.add('gig-element');
-
+    
         const imageDiv = document.createElement('div');
         const image = document.createElement('img');
-        image.src = `Images/${gig.imageFileName}`; // Assuming each gig object has an "imageFileName" property
-        image.alt = gig.artist; // Set alt text for accessibility
+        image.src = `Images/${gig.imageFileName}`;
+        image.alt = gig.artist;
         imageDiv.appendChild(image);
         gigElement.appendChild(imageDiv);
-        
-        const artistDiv = document.createElement('div');
-        artistDiv.textContent = gig.artist;
-        artistDiv.classList.add('gig-detail');
-        gigElement.appendChild(artistDiv);
-
-        const dateDiv = document.createElement('div');
-        dateDiv.textContent = gig.date;
-        dateDiv.classList.add('gig-detail');
-        gigElement.appendChild(dateDiv);
-
-        const venueDiv = document.createElement('div');
-        venueDiv.textContent = gig.venue;
-        venueDiv.classList.add('gig-detail');
-        gigElement.appendChild(venueDiv);
-
-        const priceDiv = document.createElement('div');
-        priceDiv.textContent = gig.price;
-        priceDiv.classList.add('gig-detail');
-        gigElement.appendChild(priceDiv);
-        
+    
+        const detailsDiv = document.createElement('div');
+        detailsDiv.classList.add('gig-details');
+    
+        const otherDetails = document.createElement('div');
+    
+        const details = [
+            { label: 'Artist', value: gig.artist },
+            { label: 'Date', value: gig.date },
+            { label: 'Venue', value: gig.venue },
+            { label: 'Price', value: gig.price }
+        ];
+    
+        details.forEach(detail => {
+            const detailDiv = document.createElement('div');
+            detailDiv.textContent = `${detail.label}: ${detail.value}`;
+            detailDiv.classList.add('gig-detail');
+            otherDetails.appendChild(detailDiv);
+        });
+    
+        detailsDiv.appendChild(otherDetails);
+        gigElement.appendChild(detailsDiv);
+    
         gigsPageContainer.appendChild(gigElement);
     });
+    
 
 
 }
