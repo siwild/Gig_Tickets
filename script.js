@@ -26,7 +26,8 @@ async function showOptions(category) {
     });
 
     const closeButton = document.createElement('button');
-    closeButton.textContent = 'Close';
+    closeButton.textContent = 'Close Menu';
+    closeButton.classList.add('close-button');
     closeButton.addEventListener('click', hideOptions);
 
     optionsContainer.appendChild(optionsList);

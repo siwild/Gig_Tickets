@@ -87,15 +87,13 @@ body {
     display: none;
     position: absolute;
     z-index: 999;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(195 127 28);
     padding: 1em;
     border-radius: 1em;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgb(90, 57, 7);
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    opacity: 0;
-    /* animation: fadeIn 0.5s forwards; */
     animation: scaleFadeIn 0.3s forwards;
     backdrop-filter: blur(8px); 
 }
@@ -119,6 +117,17 @@ body {
 
 .options-list-item:hover {
     background-color: #f0f0f0;
+}
+
+.close-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    
+    display: block;
+    margin: auto;
 }
 
 

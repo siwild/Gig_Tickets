@@ -22,6 +22,26 @@
     },
     {
       "id": 3,
+      "genre": "Pop",
+      "artist": "Paloma Faith",
+      "date": "10-09-2024",
+      "location": "Sheffield",
+      "venue": "Sheffield - The Leadmill",
+      "price": "£42.25",
+      "imageFileName":"LG.jpg"
+    },
+    {
+      "id": 4,
+      "genre": "Rock & Roll",
+      "artist": "The Bootleg Beatles",
+      "date": "12-05-2024",
+      "location": "Sheffield",
+      "venue": "Sheffield - The Leadmill",
+      "price": "£39.99",
+      "imageFileName":"LG.jpg"
+    },
+    {
+      "id": 5,
       "genre": "Electronic",
       "artist": "The Prodigy",
       "date": "18-08-2024",
@@ -31,7 +51,7 @@
       "imageFileName":"LG.jpg"
     },
     {
-      "id": 4,
+      "id": 6,
       "genre": "Indie",
       "artist": "The Stone Roses",
       "date": "21-07-2024",
@@ -41,7 +61,27 @@
       "imageFileName":"LG.jpg"
     },
     {
-      "id": 5,
+      "id": 7,
+      "genre": "Electronic",
+      "artist": "Leftfield",
+      "date": "20-08-2024",
+      "location": "Manchester",
+      "venue": "Manchester - AO Arena",
+      "price": "£35.20",
+      "imageFileName":"LG.jpg"
+    },
+    {
+      "id": 8,
+      "genre": "Electronic",
+      "artist": "The Chemical Brothers",
+      "date": "31-07-2024",
+      "location": "Manchester",
+      "venue": "Manchester - Etihad Stadium",
+      "price": "£79.90",
+      "imageFileName":"LG.jpg"
+    },
+    {
+      "id": 9,
       "genre": "Hip Hop",
       "artist": "Dr. Dre",
       "date": "01-05-2024",
@@ -51,7 +91,7 @@
       "imageFileName":"LG.jpg"
     },
     {
-      "id": 6,
+      "id": 10,
       "genre": "Rock & Roll",
       "artist": "The Rolling Stones",
       "date": "10-02-2024",
@@ -61,7 +101,17 @@
       "imageFileName":"LG.jpg"
     },
     {
-      "id": 7,
+      "id": 11,
+      "genre": "R&B",
+      "artist": "Beyonce",
+      "date": "28-04-2024",
+      "location": "London",
+      "venue": "London - The O2",
+      "price": "£120.00",
+      "imageFileName":"LG.jpg"
+    },
+    {
+      "id": 12,
       "genre": "Pop",
       "artist": "Take That",
       "date": "11-08-2024",
@@ -71,13 +121,23 @@
       "imageFileName":"LG.jpg"
     },
     {
-      "id": 8,
+      "id": 13,
       "genre": "Electronic",
       "artist": "Fatboy Slim",
       "date": "02-10-2024",
       "location": "Edinburgh",
       "venue": "Edinburgh - O2 Academy",
       "price": "£44.99",
+      "imageFileName":"LG.jpg"
+    },
+    {
+      "id": 14,
+      "genre": "Hip Hop",
+      "artist": "Stormzy",
+      "date": "02-12-2024",
+      "location": "Edinburgh",
+      "venue": "Edinburgh - O2 Academy",
+      "price": "£79.99",
       "imageFileName":"LG.jpg"
     }
   ]
