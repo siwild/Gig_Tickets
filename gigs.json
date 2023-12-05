@@ -18,7 +18,7 @@
       "location": "Sheffield",
       "venue": "Sheffield - O2 Academy",
       "price": "£49.50",
-      "imageFileName":"LG.jpg"
+      "imageFileName":"Kasabian.jpg"
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "location": "Sheffield",
       "venue": "Sheffield - The Leadmill",
       "price": "£42.25",
-      "imageFileName":"LG.jpg"
+      "imageFileName":"PalomaFaith.jpg"
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "location": "Sheffield",
       "venue": "Sheffield - The Leadmill",
       "price": "£39.99",
-      "imageFileName":"LG.jpg"
+      "imageFileName":"BootlegBeatles.jpg"
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "location": "Manchester",
       "venue": "Manchester - AO Arena",
       "price": "£65.00",
-      "imageFileName":"LG.jpg"
+      "imageFileName":"Prodigy.jpg"
     },
     {
       "id": 6,
@@ -58,7 +58,7 @@
       "location": "Manchester",
       "venue": "Manchester - Etihad Stadium",
       "price": "£80.00",
-      "imageFileName":"LG.jpg"
+      "imageFileName":"StoneRoses.jpg"
     },
     {
       "id": 7,
@@ -68,7 +68,7 @@
       "location": "Manchester",
       "venue": "Manchester - AO Arena",
       "price": "£35.20",
-      "imageFileName":"LG.jpg"
+      "imageFileName":"Leftfield.jpg"
     },
     {
       "id": 8,
@@ -78,7 +78,7 @@
       "location": "Manchester",
       "venue": "Manchester - Etihad Stadium",
       "price": "£79.90",
-      "imageFileName":"LG.jpg"
+      "imageFileName":"ChemicalBrothers.jpg"
     },
     {
       "id": 9,

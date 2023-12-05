@@ -16,6 +16,18 @@ body {
     position: relative;
 }
 
+/* body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(Images/Crowd.jpg) center center / cover;
+    filter: hue-rotate(90deg);
+    z-index: -1;
+} */
+
 #logo img {
     max-width: 13.4em;
     height: auto;
@@ -24,15 +36,15 @@ body {
     left: 1em;
     z-index: 999;
 }
-/* 
-#gigsLogo img {
+
+.logo img {
     max-width: 13.4em;
     height: auto;
     position: absolute;
     top: 1em;
     left: 1em;
     z-index: 999;
-} */
+}
 
 #homePageContainer {
     box-sizing: border-box;
@@ -52,7 +64,7 @@ body {
     border: 2px solid orange;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.78);
-    padding-top: 2em; /* Updated padding-top */
+    padding-top: 15em; 
     padding-bottom: 0.8em;
 }
 
@@ -171,13 +183,11 @@ body {
 .gig-element {
     background-color: white;
     color: rgb(26, 26, 26);
-    font-size: 1.9em;
-    border-bottom: 2px solid;
-    border-left: 2px solid;
-    border-top: 2px solid;
+    font-size: 1.5em;
+    border: 2px solid orange;
     border-radius: 10px;
-    padding: 0.5em 0em 0.6em 4.4em;
-    margin-bottom: 0.1em;
+    padding-top: 0.2em;
+    margin-bottom: 0.3em;
     box-shadow: -5px 3px 9px 0px;
     display: flex;
     flex-direction: row;
@@ -186,21 +196,22 @@ body {
 }
 
 .gig-element img {
-    width: 7em;
+    width: 15em;
     height: 7em;
     object-fit: cover;
-    border-radius: 33%;
-    margin-right: 0.9em;
-    margin-left: -2.9em;
+    border-radius: 4%;
+    border: 2px solid orange;
+    margin: 0.3em 0.4em;
+    box-shadow: 5px 5px 10px #888888;
 }
 
 .gig-element .gig-details {
     flex: 1;
     display: flex;
     flex-direction: column;
+    margin: 0.9em 0em 0em 1em;
 }
 
 .gig-element .gig-details .gig-detail {
-    margin-bottom: 10px;
-    font-size: 1.2em;
+    margin-bottom: 0.3em;   
 }
